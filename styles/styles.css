@@ -676,10 +676,18 @@ a:hover {
 }
 
 .blue a {
-	color: black;
+	color: #1b447f;
 }
 
 .blue a:hover {
+	color: #03a3df;
+}
+
+.black a {
+	color: #000000;
+}
+
+.black a:hover {
 	color: #1b447f;
 }
 
@@ -691,60 +699,78 @@ a:hover {
 	color: #1b447f;
 }
 
-.grid-item-1,
-.grid-item-2,
-.grid-item-3,
-.grid-item-4,
-.grid-item-5,
-.grid-item-6,
-.grid-item-7,
-h2 h3 p {
+.grid-container-3col {
+	display: grid;
+	grid-template-columns: 7% 23.3% 23.3% 23.3% 7%;
+	grid-template-rows: auto auto auto auto auto;
+	grid-column-gap: 4%;
+	padding-top: 1%;
+	padding-bottom: 3%;
+	width: 100%;
+}
+
+.grid-3col-1 {
+	grid-column-start: 1;
+	grid-column-end: 6;
 	text-align: center;
 }
 
-.grid-container-programs {
+.grid-3col-2 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	text-align: center;
+}
+
+.grid-3col-3 {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	text-align: center;
+}
+
+.grid-3col-4 {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	text-align: center;
+}
+
+.grid-container-4col {
 	display: grid;
-	justify-content: space-around;
+	grid-template-columns: 10% 17.5% 17.5% 17.5% 17.5% 13%;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-column-gap: 2%;
+	padding-top: 1%;
+	padding-bottom: 3%;
+	width: 100%;
 }
 
-section .grid-container-programs {
-	align-items: center;
-	justify-content: center;
-}
-
-.grid-item-1 {
+.grid-4col-1 {
 	grid-column-start: 1;
-	grid-column-end: 4;
+	grid-column-end: 7;
+	text-align: center;
 }
 
-.grid-item-2 {
-	grid-column-start: 1;
-	grid-column-end: 2;
-}
-
-.grid-item-3 {
+.grid-4col-2 {
 	grid-column-start: 2;
 	grid-column-end: 3;
+	text-align: center;
 }
 
-.grid-item-4 {
+.grid-4col-3 {
 	grid-column-start: 3;
 	grid-column-end: 4;
+	text-align: center;
 }
 
-.grid-item-5 {
-	grid-column-start: 1;
-	grid-column-end: 2;
+.grid-4col-4 {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	text-align: center;
 }
 
-.grid-item-6 {
-	grid-column-start: 2;
-	grid-column-end: 3;
-}
-
-.grid-item-7 {
-	grid-column-start: 3;
-	grid-column-end: 4;
+.grid-4col-5 {
+	grid-column-start: 5;
+	grid-column-end: 6;
+	text-align: center;
 }
 
 .circle {
@@ -811,6 +837,11 @@ footer {
 }
 
 footer p {
+	font-size: .7rem;
+	line-height: 1rem;
+}
+
+footer li {
 	font-size: .7rem;
 	line-height: 1rem;
 }
