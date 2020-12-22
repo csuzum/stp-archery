@@ -507,8 +507,37 @@ p {
 	line-height: 1.5rem;
 }
 
+h4 {
+	line-height: .1rem;
+}
+
+.hidden {
+	position:relative;
+	left: -10000px;
+	top: auto;
+}
+
+.hidden:focus {
+	left: 0;
+}
+
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 0;
+	height: 1px;
+	overflow: hidden;
+}
+
 header {
 	padding-left: 3%;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .grid-container-nav {
@@ -527,12 +556,22 @@ header {
 	grid-column: 5 / 6;
 	grid-row: 1 / 2;
 	text-align: center;
+	background-color: #03a3df;
+}
+
+.grid-nav-2:hover {
+	background-color: #9ae2fc;
 }
 
 .grid-nav-3 {
 	grid-column: 6 / 7;
 	grid-row: 1 / 2;
 	text-align: center;
+	background-color: #ecb722;
+}
+
+.grid-nav-3:hover {
+	background-color: #fcda79;
 }
 
 .grid-nav-4 {
@@ -605,7 +644,7 @@ header {
 .hero-heading {
 	font-size: 3.5rem;
 	font-weight: bolder;
-	text-shadow: 2px 2px 4px #000000;
+	text-shadow: 4px 4px 20px #000000;
 	white-space: nowrap;
 }
 
@@ -628,12 +667,28 @@ a:hover {
 	color: #ecb722;
 }
 
+.grid-nav-2 a {
+	color: #123059;
+}
+
+.grid-nav-3 a {
+	color: #123059;
+}
+
 .blue a {
-	color: #1b447f;
+	color: black;
 }
 
 .blue a:hover {
-	color: #03a3df;
+	color: #1b447f;
+}
+
+.grid-container-main a {
+	color: black;
+}
+
+.grid-container-main a:hover {
+	color: #1b447f;
 }
 
 .grid-item-1,
@@ -738,6 +793,10 @@ section .grid-container-programs {
 	grid-row: 3 / 5;
 }
 
+.grid-main-2 li {
+	line-height: 1.5rem;
+}
+
 iframe {
   margin: 0;
   padding: 0;
@@ -817,15 +876,17 @@ button {
 }
 
 button:hover {
-	background-color: #03a3df;
+	background-color: #CF0C0C;
 }
 
 footer button {
-	background-color: #03a3df;
+	background-color: #ecb722;
+	color: #1b447f;
 }
 
 footer button:hover {
-	background-color: #ecb722;
+	background-color: #CF0C0C;
+	color: white;
 }
 
 fieldset {
